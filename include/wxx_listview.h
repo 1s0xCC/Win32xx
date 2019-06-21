@@ -875,7 +875,7 @@ namespace Win32xx
 		if (-1 != width)
 		{
 			lvc.mask |= LVCF_WIDTH;
-			lvc.cx = width;
+			lvc.cx = MulDiv(width, GetDC().GetDeviceCaps(LOGPIXELSY), 96);
 		}
 		if (-1 != subItem)
 		{
