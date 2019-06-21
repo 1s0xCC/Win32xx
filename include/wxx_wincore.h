@@ -92,6 +92,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 #include "wxx_menu.h"
 #endif
 #include "wxx_ddx.h"
+#pragma comment(lib,"comctl32.lib")
 
 namespace Win32xx
 {
